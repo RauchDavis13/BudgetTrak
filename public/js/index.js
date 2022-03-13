@@ -14,6 +14,18 @@ fetch("/api/transaction")
     populateChart();
   });
 
+// document.addEventListener('DOMContentLoaded', init, false);
+// function init() {
+//   if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('../../service-worker.js')
+//       .then((reg) => {
+//         console.log('Service worker registered -->', reg);
+//       }, (err) => {
+//         console.error('Service worker not registered -->', err);
+//       });
+//   }
+// }
+
 function populateTotal() {
   // reduce transaction amounts to a single total value
   let total = transactions.reduce((total, t) => {
